@@ -6,15 +6,9 @@ Created on Sun Apr  7 03:22:43 2024
 @author: aref
 """
 
-
 import numpy as np
 
-
-
 a = np.zeros((10,10))
-
-d_table = a.copy()
-d_table2 = a.copy()
 
 x1 = 9
 y1 = 9 
@@ -28,7 +22,6 @@ a[y2][x2] = 2
 # دو نقطه‌ی داده شده
 #point1 = (x1, y1)
 #point2 = (x2, y2)
-
 # # استخراج مختصات x و y از نقاط
 # x_coords, y_coords = zip(point1, point2)
 # # ساخت ماتریس A برای رگرسیون خطی
@@ -38,7 +31,7 @@ a[y2][x2] = 2
 # # نمایش معادله‌ی خطی
 #print(f"معادله‌ی خطی: y = {m:.2f}x + {c:.2f}")
 
-
+#محاسبه معدادله درجه یک بین دو نقطه 
 def get_linear_equation():
     # Extract coordinates from the given points
     #x1, y1 = point1
@@ -58,7 +51,7 @@ def get_linear_equation():
 m,c = get_linear_equation()
 
 print('linear_equation is :')
-print(f'Y = {m:.1f} x + {c:.1f}')
+print(f'Y = {m:.1f} x + {c:.1f}') # معدله بدست آمده
 
 j = abs(x2 - x1)
 min_ = min(x1, x2)
